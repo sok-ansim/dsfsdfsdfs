@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>뇌 건강 자가진단테스트</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div style="position: fixed; top: 0; left: 0; width: 100%; background-color: white; z-index: 1000; padding: 10px 0; text-align: center; border-bottom: 1px solid #ccc;">
+    <a href="index.html" style="text-decoration: none; font-size: 45px; font-weight: bold; color: #100639;">속안심내과 건강자가진단 테스트</a>
+  </div>
+  <div id="test-screen" style="margin-top: 100px; min-height: 80vh;"></div>
+  <div id="result"></div>
+  <script>
+    const questions = [
+      { text: "갑자기 말이 어눌해진 적이 있나요?", image: "brain_q1.jpg" },
+      { text: "한쪽 팔이나 다리에 마비나 힘 빠짐을 느낀 적 있나요?", image: "brain_q2.jpg" },
+      { text: "심한 두통이 자주 있거나, 평소와 다른 두통이 있었나요?", image: "brain_q3.jpg" },
+      { text: "최근 기억력 저하나 집중력 저하를 경험하고 있나요?", image: "brain_q4.jpg" },
+      { text: "고혈압, 당뇨, 고지혈증 중 하나라도 해당되나요?", image: "brain_q5.jpg" }
+    ];
+    const resultImages = [
+      "brain_result_0.jpg", "brain_result_1.jpg", "brain_result_2.jpg"
+    ];
+    runTest(questions, resultImages);
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>소화기 건강테스트</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div style="position: fixed; top: 0; left: 0; width: 100%; background-color: white; z-index: 1000; padding: 10px 0; text-align: center; border-bottom: 1px solid #ccc;">
+    <a href="index.html" style="text-decoration: none; font-size: 45px; font-weight: bold; color: #100639;">속안심내과 건강자가진단 테스트</a>
+  </div>
+  <div id="test-screen" style="margin-top: 100px; min-height: 80vh;"></div>
+  <div id="result"></div>
+  <script>
+    const questions = [
+      { text: "속쓰림이나 신물이 올라온 적이있나요?", image: "d1.jpg" },
+      { text: "소화가 잘 안되거나 더부룩한가요?", image: "d2.jpg" },
+      { text: "명치나 윗배가 자주 아프거나 눌리는 느낌이 있나요?", image: "d3.jpg" },
+      { text: "트림이 잦은가요?", image: "d4.jpg" },
+      { text: "헛배가 부르거나 잔변감이 있나요?", image: "d5.jpg" }
+    ];
+    const resultImages = ["digest_result_0.jpg", "digest_result_1.jpg", "digest_result_2.jpg"];
+    runTest(questions, resultImages);
+  </script>
+</body>
+</html>

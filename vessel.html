@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>내 혈관점수는?</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div style="position: fixed; top: 0; left: 0; width: 100%; background-color: white; z-index: 1000; padding: 10px 0; text-align: center; border-bottom: 1px solid #ccc;">
+    <a href="index.html" style="text-decoration: none; font-size: 45px; font-weight: bold; color: #100639;">속안심내과 건강자가진단 테스트</a>
+  </div>
+  <div id="test-screen" style="margin-top: 100px; min-height: 80vh;"></div>
+  <div id="result"></div>
+  <script>
+    const questions = [
+      { text: "하루에 30분 이상 걷거나 운동을 하는 날이 주 3일 이상인가요?", image: "v1.jpg" },
+      { text: "짠 음식을 자주 섭취하나요?", image: "v2.jpg" },
+      { text: "스트레스를 자주 받으시나요?", image: "v3.jpg" },
+      { text: "현재 흡연 중이신가요?", image: "v4.jpg" },
+      { text: "혈압이 높다는 진단을 받은 적 있나요?", image: "v5.jpg" }
+    ];
+    const resultImages = ["vessel_result_0.jpg", "vessel_result_1.jpg", "vessel_result_2.jpg"];
+    runTest(questions, resultImages);
+  </script>
+</body>
+</html>
